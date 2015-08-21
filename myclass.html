@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>个人中心-我的课表</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="css/base.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+<script src="js/calendar.js"></script>
+<script>
+$(function(){
+  var myDate1 = new Calender({id:'j_Date1'})
+});
+</script>
+</head>
+<body>
+ <!--header-->
+  <div class="header ">
+    <div class="ui-top" >
+      <div class="ui-grid-1000 ">
+        <div class="fn-left">欢迎您来到麦德魔方！</div>
+        <div class="fn-right">
+          <a class="hd-item" href="#">我的魔方</a>  
+          <a class="hd-item" href="#">登录</a>  
+          <a class="hd-item" href="#">注册</a>  
+          <a class="hd-item" href="#">网站导航</a>  
+          <a class="hd-item" href="#">收藏的课程</a>
+        </div>
+      </div>
+    </div>
+    <div class="header-bg head-bg2">
+      <div class="ui-grid-1000">
+        <div class="ui-logo fn-left">学生个人中心</div>
+        <div class="header-info fn-right">
+          <span class="ui-name">bduedwe</span>
+          <a href="#" class="">消息中心</a>
+          <a href="#" class="">注销</a>
+          <span class="ui-head-top"><img src="images/header.jpg"/></span>
+        
+        </div>
+      
+
+      </div>
+    </div>
+  </div>
+  <!--主要内容 start-->
+  <div class="content myclass-content">
+    <div class="ui-grid-1000">
+      <div class="ui-curr-pos">当前位置：<a href="#">首页</a>><a href="#">学生中心</a></div>
+      <div class="ui-main ui-bor fn-clear">
+        <div class="ui-leftmenu fn-left">
+          <ul>
+            <li class="ui-leftmenu-item ui-leftmenu-item-curr">
+              <a href="myclass.html">
+                <em class="ui-arr"></em>
+                <span>我的课表</span>
+              </a>
+            </li>
+            <li class="ui-leftmenu-item">
+              <a href="myteacher.html">
+                <em class="ui-arr"></em>
+                <span>我的老师</span>
+              </a>
+            </li>
+            <li class="ui-leftmenu-item">
+              <a href="myorder.html">
+                <em class="ui-arr"></em>
+                <span>我的订单</span>
+              </a>
+            </li>
+            <li class="ui-leftmenu-item">
+              <a href="myprofess.html">
+                <em class="ui-arr"></em>
+                <span>我的专业</span>
+              </a>
+            </li>
+            <li class="ui-leftmenu-item">
+              <a href="myvedio.html">
+                <em class="ui-arr"></em>
+                <span>我的视频</span>
+              </a>
+            </li>
+            <li class="ui-leftmenu-item">
+              <a href="personset.html">
+                <em class="ui-arr"></em>
+                <span>个人设置</span>
+              </a>
+            </li>
+            <li class="ui-leftmenu-item">
+              <a href="pursemag.html">
+                <em class="ui-arr"></em>
+                <span>钱包管理</span>
+              </a>
+            </li>
+            <li class="ui-leftmenu-item">
+              <a href="mycredit.html">
+                <em class="ui-arr"></em>
+                <span>我的信用</span>
+              </a>
+            </li>
+            <li class="ui-leftmenu-item">
+              <a href="mycollect.html">
+                <em class="ui-arr"></em>
+                <span>我的收藏</span>
+              </a>
+            </li>
+            <li class="ui-leftmenu-item">
+              <a href="mymessage.html">
+                <em class="ui-arr"></em>
+                <span>我的消息</span>
+              </a>
+            </li>
+            <li class="ui-leftmenu-item">
+              <a href="accountset.html">
+                <em class="ui-arr"></em>
+                <span>账户设置</span>
+              </a>
+            </li>
+            <li class="ui-leftmenu-item">
+              <a href="activity.html">
+                <em class="ui-arr"></em>
+                <span>返现活动</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="ui-rightcontent fn-left fn-clear ui-relative">
+          <div class="ui-leftmenu-bor"></div>
+          <ul class="fn-clear">                              
+            <li class="ui-class-item ui-class-item-curr">
+              <a href="javascript:;">课程日历</a>
+            </li>
+            <li class="ui-class-item">
+              <a href="javascript:;">待确认约课</a>
+              <i class="ui-tip-num">10</i>
+            </li>
+            <li class="ui-class-item">
+              <a href="javascript:;">待上课</a>
+              <i class="ui-tip-num">10</i>
+            </li>
+            <li class="ui-class-item">
+              <a href="javascript:;">待确认上课</a>
+              <i class="ui-tip-num">10</i>
+            </li>
+          </ul>
+          <div id="j-date" class="fn-clear">
+          <input type="hidden" id="j_Date1" class="input">
+          </div>
+          <table class="ui-class-tab">
+            <tr class="ui-th">                                                         
+              <td width="161">课程</td>
+              <td width="260">教师</td>
+              <td width="130">时间</td>
+              <td width="130">操作</td>
+            </tr>
+            <tr class="ui-other-tr">                                                         
+              <td class="ui-class-tit">现代舞教学</td>
+              <td>
+                <img src="images/teacher_min.jpg"/>
+                <div class="ui-teacher-wrap">
+                  <p class="ui-name">杨丽萍</p>
+                  <p><em class=""></em>三年教龄</p>
+                  <p><em class="ui-dance-icon"></em>名族舞</p>
+                </div>
+              </td>
+              <td>17:20开课</td>
+              <td>
+                <a class="ui-org2-btn" href="javascript:;">取消约课</a>
+              </td>
+            </tr>
+            <tr class="ui-other-tr">                                                         
+              <td class="ui-class-tit">现代舞教学</td>
+              <td>
+                <img src="images/teacher_min.jpg"/>
+                <div class="ui-teacher-wrap">
+                  <p class="ui-name">杨丽萍</p>
+                  <p><em class=""></em>三年教龄</p>
+                  <p><em class="ui-dance-icon"></em>名族舞</p>
+                </div>
+              </td>
+              <td>17:20开课</td>
+              <td>
+                <a class="ui-org2-btn" href="javascript:;">取消约课</a>
+              </td>
+            </tr>
+            <tr class="ui-other-tr">                                                         
+              <td class="ui-class-tit">现代舞教学</td>
+              <td>
+                <img src="images/teacher_min.jpg"/>
+                <div class="ui-teacher-wrap">
+                  <p class="ui-name">杨丽萍</p>
+                  <p><em class=""></em>三年教龄</p>
+                  <p><em class="ui-dance-icon"></em>名族舞</p>
+                </div>
+              </td>
+              <td>17:20开课</td>
+              <td>
+                <a class="ui-org2-btn" href="javascript:;">取消约课</a>
+              </td>
+            </tr>
+          </table>
+          <div class="ui-page">
+            <a href="#">上一页</a>
+            <a href="#" class="ui-page-curr">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <a href="#">下一页</a>
+          </div>
+        </div>
+      </div>
+       
+    </div>
+  </div>
+  <!--主要内容 end-->
+  <!--尾部-->
+  <div class="footer-sec">
+    <div class="ui-grid-1000">
+      <div class="footer-logo fn-left"></div>
+      <div class="footer-rights fn-right">2014@ 麦德魔方版权所有 ALL COPYRIGHT  技术支持：华天科技
+          24小时服务热线：400-000-0000</div>
+    </div>
+  </div>
+</body>
+</html>

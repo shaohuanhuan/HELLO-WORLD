@@ -1,0 +1,559 @@
+@charset "utf-8";
+
+/*商盟专区 start-----------*/
+.alli-header{
+    height:114px;
+    background:#f5f5f5;
+    font-family: 'Microsoft Yahei';
+}
+.ui-logo2 img{
+    margin-top:-21px;
+   width:105px;
+   height:95px;
+}
+.ui-logo2 h1{
+    color:#333;
+    font-size:30px;
+    line-height:114px;
+}
+.ui-tele{
+    margin-top:27px;
+}
+.ui-tele-pic{
+    margin-top:-35px;
+    width:51px;
+    height:51px;
+    vertical-align: middle;
+    background:url(../images/common.png) no-repeat;
+    background-position: -33px -428px;
+}
+.ui-pnum{
+    margin-left:5px;
+    width:200px;
+    font-size:14px;
+    color:#272727;
+}
+.ui-pnum span{
+    font-size:24px;
+    color:#3979d0;
+}
+.ui-alogin{
+    width:100%;
+    height:400px;
+    background:url(../images/login01.jpg) no-repeat;
+}
+.ui-alogin-form{
+    margin-top:41px;
+    width:261px;
+    height:272px;
+    padding:20px 22px 20px 29px;
+    background:#fff;
+}
+.ui-alogin-form .ui-login-tit{
+    margin:0 0 25px 0;
+    text-align:left;
+    color:#333;
+    border:0;
+}
+.ui-alogin-form .ui-ainput{
+    margin-bottom:15px;
+    width: 253px;
+    height: 36px;
+    line-height:36px;
+    padding-left: 8px;
+    border: solid 1px #e3e3e3;
+}
+.ui-remb{
+    margin-bottom:15px;
+}
+.ui-remb input[type="text"]{
+  font-size:16px;
+}
+.ui-remb span,.ui-remb a{
+    font-family: 'Microsoft Yahei';
+   color:#333;
+}
+.ui-ablue-btn{
+    width:100%;
+    height:34px;
+    line-height:34px;
+    background:#6287d5;
+    color:#fff;
+    border:0;
+    border-radius: 2px;
+    -moz-border-radius: 2px;  
+    -webkit-border-radius: 2px;
+    font-family: 'Microsoft Yahei';
+}
+.ui-alli-tit{
+    height:84px;
+    line-height:84px;
+    font-size:24px;
+    color:#2d2d2d;
+    font-family: 'Microsoft Yahei';
+    border-bottom:1px solid #e1e1e1;
+    text-align:center;
+}
+.ui-alli-icon{
+    margin:0 auto;
+    width:150px;
+    height:152px;
+    background:url(../images/common.png) no-repeat;
+    background-position: -99px -402px;
+}
+.ui-advantage-item *{
+    font-family: 'Microsoft Yahei';
+}
+.ui-advantage-item{
+    float:left;
+    margin:20px 15px 20px 0;
+    width:212px;
+    padding:0 10px;
+    text-align:center;
+}
+.ui-advantage-item h4{
+    height:60px;
+    line-height:60px;
+   color:#1d1d1d;
+   font-size:18px;
+}
+.ui-advantage-item p{
+    font-size:14px;
+}
+.ui-alli-icon2{
+    background-position: -262px -403px;
+}
+.ui-alli-icon3{
+    background-position: -427px -404px;
+}
+.ui-alli-icon4{
+    background-position: -595px -406px;
+}
+
+.alli-guide,.alli-apply{
+    background:#fff;
+}
+.alli-guide ul{
+    height:43px;
+    margin:10px 9px;
+    border-bottom:2px solid #0286D8;
+}
+
+.ui-guide-tit{
+    float:left;
+    margin-right:3px;
+    width:242px;
+    height:43px;
+    line-height:43px;
+    text-align:center;
+}
+.ui-guide-tit-last{
+    margin-right:0;
+    width:245px;
+}
+.ui-guide-tit a{
+    display:block;
+    font-size: 16px;
+    color:#1d1d1d;
+    background:#F5F5F5;
+    font-family: 'Microsoft Yahei';
+}
+.ui-guide-tit-curr a{
+    color:#fff;
+    background:#0286D8;
+}
+.ui-guide-content{
+  padding:10px 8px 50px 8px;
+}
+.ui-guide-content h4{
+     font-weight: bold;
+     line-height:30px;
+}
+.ui-guide-content p{
+    line-height:20px;
+}
+.alli-apply{
+  padding-bottom:3px;
+}
+.alli-apply .ui-reg *{
+  font-family: 'Microsoft Yahei';
+}
+.alli-apply .ui-reg{
+    margin:20px auto;
+}
+.ui-reg .ui-long-sel{
+    width:391px;
+}
+.ui-txta{
+    width:381px;
+    height:234px;
+    border: solid 1px #e3e3e3;
+    font-family: 'Microsoft Yahei';
+}
+.alli-content{
+  padding-bottom:0;
+}
+/*商盟专区 end-----------*/
+/*机构登录 start---------*/
+.inst-header{
+  box-shadow: 10px 8px 11px #ccc;
+   -webkit-box-shadow:10px 8px 11px #ccc;
+}
+.ui-instlogin{
+  padding-top:50px;
+}
+.ui-instlogin .ui-inst-main{
+  padding-bottom:53px;
+}
+.ui-instlogin-form{
+  margin-top:0;
+  padding:18px 0 20px 26px;
+  width:372px;
+  height:auto;
+  background:#f9f9f9;
+  border:1px solid #d8d8d8;
+}
+.ui-instlogin-form .ui-login-tit{
+   margin:-12px 0 8px 0;
+}
+.ui-instlogin-form .ui-ainput{
+  margin-bottom:26px;
+  height: 26px;
+  line-height: 26px;
+  width:219px;
+}
+.ui-instlogin-form .ui-ainput-short{
+  width:48px;
+}
+.ui-instlogin-form label{
+  width:40px;
+}
+.ui-instlogin-item{
+  padding-left:30px;
+}
+.ui-inst-btn{
+  width:100px;
+  height:32px;
+  line-height:32px;
+  color:#fff;
+  font-weight:bold;
+  text-align:center;
+  background-position: -107px -694px;
+}
+.ui-yzm a{
+   color:#999;
+}
+.no-rember{
+  height:48px;
+  line-height: 48px;
+}
+.no-rember a{
+  font-weight:bold;
+  line-height:29px;
+}
+.ui-bold{
+  font-weight:bold;
+}
+.ui-marg{
+  margin-left:46px;
+}
+.ui-coop{
+  margin-left:-45px;
+  margin-right:10px;
+  padding-left: 90px;
+  border-top:1px dashed #ccc;
+}
+.ui-coop *{
+  color:#777;
+}
+.ui-coop p{
+  height:40px;
+  line-height:40px;
+}
+.ui-qq,.ui-sina{
+  position:relative;
+}
+.ui-qq i,.ui-sina i{
+  position:absolute;
+  left:6px;
+  top:5px;
+  width:18px;
+  height:18px;
+  background:url(../images/common.png) no-repeat;
+  background-position: -1px -598px;
+}
+.ui-qq .ui-btn-text{
+  padding:0 15px 0 27px;
+  background-position: -426px -612px;
+}
+.ui-sina i{
+  background-position: -1px -627px;
+}
+.ui-sina .ui-btn-text{
+  padding:0 10px 0 27px;
+  background-position: -419px -612px;
+}
+/*机构登录 end---------*/
+/*加商盟资料，列表 start--------*/
+.ui-dialog-data{ 
+  display:block; 
+  position:relative; 
+  top:0px; 
+  left:0px; 
+  width: 740px;
+}
+.ui-school-pic-data{
+  margin: 35px 35px 54px 20px;
+}
+.ui-school-desc-data{
+  margin-top: 10px;
+}
+.ui-school-tit-data{
+  width: 340px;
+}
+.ui-data-code2{ 
+  margin-left:-85px;
+}
+/*加商盟资料，列表end----------*/
+
+/*加盟商中心 首页start---------*/
+.ui-alli-center .ui-myvedio-tit{
+  border:0;
+}
+.ui-alli-center .ui-class-tab{
+  border:1px solid #e4e4e4;
+}
+.ui-allic-tab{
+  border:1px solid #e5e5e5;
+  border-bottom:0;
+}
+.ui-allic-tab tr th,.ui-allic-tab tr td{
+  padding-left:10px;
+  border-bottom:1px solid #e5e5e5;
+  color:#4d4d4d;
+}
+.ui-allic-tab th{
+  height: 25px;
+  line-height:25px;
+  background:#f5f5f5;
+}
+.ui-allic-tab tr td{
+  height:50px;
+  line-height:50px;
+}
+.ui-tab-page td{
+  padding-right:30px;
+}
+.ui-allic-twotit p{
+  float:right;
+  line-height:36px;
+}
+.ui-allic-twotit p i{
+  margin-right: 5px;
+}
+.ui-tit-pos{
+    margin-top:50px;
+}
+.ui-allic-tab i{
+    font-size:14px;
+}
+.ui-allic-tab .ui-rank-num{
+    margin-left:10px;
+}
+.alli-header-info{
+    margin:36px 0;
+}
+
+/*加盟商中心 首页end---------*/
+/*加盟商中心 钱包管理 start------*/
+.ui-purse-methods{
+  margin-top:20px;
+  padding-bottom:20px;
+}
+.ui-methods-tit{
+  line-height: 30px;
+}
+.ui-bank-list{
+  margin-left:63px;
+  width:693px;
+}
+.ui-bank-icon{
+  cursor:pointer;
+  border:1px solid #ddd;
+}
+.ui-bank-icon:hover{
+  border:1px solid #f00;
+}
+.ui-bank-icon img{
+  max-width:123px;
+  max-height:36px;
+}
+.ui-bank-list>li{
+  float:left;
+  margin-top:10px;
+  margin-right:29px;
+}
+.ui-bank-chkd label{
+  border:1px solid #f00;
+}
+.rad-pos{
+  margin-left:50px;
+}
+.ui-sel-nobor{
+  display:block;
+  height:26px;
+  color:#08c;
+  border:0;
+}
+.ui-red{
+  color:#f00;
+}
+.choseOther {
+  margin-top:5px;
+  margin-left:56px;
+}
+.choseOther .ui-red{
+  margin-left:10px;
+}                      
+.ui-dowbor{
+  border-bottom:1px solid #dbdbdb;
+}
+.ui-next-btn{
+  margin:20px 0 0 326px;
+  font-size:14px;
+  color:#fff;
+  font-weight: bold;
+  padding:6px 23px;
+  background-position: -107px -741px;
+  text-decoration: none;
+}
+
+.ui-wdbank-item{
+  margin-bottom:10px;
+  width:360px;
+  height:46px;
+  line-height: 46px;
+  padding-left:20px;
+  background: #fcfcfd;
+  font-size:14px;
+}
+.ui-wdbank-item em,.ui-wdbank-item span{
+  vertical-align: middle;
+}
+.ui-wdbank-item .ui-bank-word{
+   color:#333;
+}
+.ui-bkicon{
+  margin-left:25px;
+  margin-right:5px;
+}
+.ui-wd-remark{
+  margin-right:-5px;
+  color:#8c8c8c;
+  font-size:12px;
+  letter-spacing: 5px;
+}
+.ui-wd-main .ui-purse-methods{
+  margin-left:50px;
+}
+.ui-wd-main .ui-methods-tit{
+   margin-top: 10px;
+  vertical-align: top;
+}
+.ui-wd-main .ui-tit-pos{
+   margin-top: 0;
+}
+.ui-wdinput{
+  width:140px;
+  height:30px;
+  line-height: 32px;
+  padding-left:5px;
+  border:1px solid #ddd;
+}
+.ui-wd-main .ui-next-btn{
+  margin-left:116px;
+}
+
+.ui-tranf{
+  padding:27px 0 0 75px;
+  color:#333;
+}
+.ui-tranf label{
+  margin-right:20px;
+}
+.ui-pay-tit{
+  margin-top:30px;
+  padding:0 0 10px 15px;
+  color:#333;
+  border-bottom:1px solid #d8d8d8;
+}
+.ui-pay-tit h4{
+  width:100px;
+}
+.ui-pay-tit a{
+  float:right;
+}
+.ui-use-help{
+  color:#d33600;
+}
+.ui-third-pay{
+  padding:18px 0 20px 44px;
+}
+.ui-third-pay p{
+  line-height:33px;
+  color:#999;
+}
+.ui-third-rdo{
+  margin-left:18px;
+}
+.ui-pay-list{
+  margin:-16px 0 0 18px;
+}
+.ui-third-pay .ui-bank-icon{
+  border:0;
+}
+.ui-more-bk{
+  margin-left:19px;
+  height: 35px;
+  line-height: 35px;
+  
+}
+/*加盟商中心 钱包管理 end------*/
+/*zjs*/ 
+.ui-mvsearch-statics{ 
+  padding-top:20px; 
+  padding-bottom:20px;
+}
+.ui-fblue{  
+  color:#0069b2;
+  font-size:12px;
+  font-family: 'Microsoft Yahei';
+  }
+.ui-allic-tab-statics td,.ui-allic-tab-statics th{
+  text-align:center;
+}
+.ui-allic-balance .ui-allic-tab-statics{ border:none;}
+.ui-allic-setable-statics{
+  
+}
+
+.ui-allic-setable-statics .ui-mvsub-tit td{ color:#0069b2;}
+.ui-allic-tab tr td.ui-alli-stac-box{ padding-left:0px;}
+.ui-allic-tab-statics .ui-tab-page-statc td{ text-align:right;}
+.ui-wdr-tip{ margin-left:100px;}
+.ui-black2{ font-size:18px; color:#000; font-weight:bolder;}
+.ui-allic-bal a{ margin-right:20px; text-decoration:none; cursor:pointer;}
+.ui-allic-bal{ padding:30px 30px 0px 30px}
+.ui-allic-tab .ui-last2 td{
+  border-bottom:0;
+}
+.ui-bal-tip{
+  height:40px;
+  line-height:40px;
+}
+.ui-alli-stac-box .ui-myvedio-subtab{
+  width:682px;
+  border-bottom:0;
+}
+/*zje*/ 
+

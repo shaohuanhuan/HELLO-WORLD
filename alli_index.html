@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>加盟商中心-首页</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="css/base.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/alli.css" rel="stylesheet">
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+</head>
+<body>
+ <!--header-->
+  <div class="header ">
+    <div class="ui-top" >
+      <div class="ui-grid-1000 ">
+        <div class="fn-left">欢迎您来到麦德魔方！</div>
+        <div class="fn-right">
+          <a class="hd-item" href="#">我的魔方</a>  
+          <a class="hd-item" href="#">登录</a>  
+          <a class="hd-item" href="#">注册</a>  
+          <a class="hd-item" href="#">网站导航</a>  
+          <a class="hd-item" href="#">收藏的课程</a>
+        </div>
+      </div>
+    </div>
+    <div class="header-bg head-bg2">
+      <div class="ui-grid-1000">
+        <div class="ui-logo fn-left">加盟商中心</div>
+        <div class="header-info alli-header-info fn-right">
+          <span class="ui-name">bduedwe</span>
+          <a href="#" class="">消息中心</a>
+          <a href="#" class="">注销</a>
+        
+        </div>
+      
+
+      </div>
+    </div>
+  </div>
+  <!--主要内容 start-->
+  <div class="content myclass-content">
+    <div class="ui-grid-1000">
+      <div class="ui-curr-pos">当前位置：
+        <a href="#">首页</a><em>></em><a href="#">加盟商中心</a></div>
+      <div class="ui-main ui-bor fn-clear">
+        <div class="ui-leftmenu fn-left">
+          <ul>
+            <li class="ui-leftmenu-item">
+              <a href="alli_myorder.html">
+                <em class="ui-arr"></em>
+                <span>我的订单</span>
+              </a>
+            </li>
+           <li class="ui-leftmenu-item">
+              <a href="javascript:;" onclick="openSub(this);">
+                <em class="ui-arr"></em>
+                <span>钱包管理</span>
+              </a>
+              <ul class="ui-leftmenu-sublist">
+                <li class="ui-leftmenu-subitem">
+                  <a href="alli_bk.html">银行卡绑定</a></li>
+                <li class="ui-leftmenu-subitem">
+                  <a href="alli_online.html">在线支付</a></li>
+                <li class="ui-leftmenu-subitem">
+                  <a href="alli_balance.html">我的余额</a></li>
+                <li class="ui-leftmenu-subitem">
+                  <a href="alli_wd.html">提现</a></li>
+                <li class="ui-leftmenu-subitem">
+                  <a href="alli_payrec.html">支付记录</a></li>
+                <li class="ui-leftmenu-subitem ui-sublast">
+                  <a href="alli_wdrec.html">提现记录</a></li>
+              </ul>
+            </li>
+            <li class="ui-leftmenu-item">
+              <a href="javascript:;" onclick="openSub(this);">
+                <em class="ui-arr"></em>
+                <span>加盟商下属管理</span>
+              </a>
+              <ul class="ui-leftmenu-sublist">
+                <li class="ui-leftmenu-subitem">
+                  <a href="subord_stusum.html">下属学员数据统计</a></li>
+                <li class="ui-leftmenu-subitem">
+                  <a href="subord_merinfo.html">下级加盟商资料</a></li>
+                <li class="ui-leftmenu-subitem ui-sublast">
+                  <a href="subord_mersum.html">下级加盟商数据统计</a></li>
+              </ul>
+            </li>
+            <li class="ui-leftmenu-item">
+              <a href="myvedio.html">
+                <em class="ui-arr"></em>
+                <span>我的视频</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="ui-rightcontent ui-alli-center fn-left fn-clear ui-relative">
+          <div class="ui-leftmenu-bor"></div>
+          <h3 class="ui-myvedio-tit">最新订单</h3>
+          <table class="ui-class-tab ui-order-tab">
+            <tr class="ui-order-num">
+              <td colspan='2'>
+                <span>2012-02-02 11:22:22</span> <span>订单号：2222112323222222</span>
+              </td>
+              <td>
+                总价：<strong>￥</strong>200.00
+              </td>
+            </tr>
+            <tr class="ui-other-tr">                                                         
+              <td width="249" class="ui-class-tit">现代舞教学</td>
+              <td width="243">
+                总价：￥<em>300.00</em><i>|</i><span>待支付</span>
+              </td>
+              <td width="140" class="ui-operate">
+                <a href="#">确认支付</a>
+                <a href="#">查看详情</a>
+                <a href="#">取消订单</a>
+              </td>
+            </tr>
+            <tr class="ui-order-num">
+              <td colspan='2'>
+                <span>2012-02-02 11:22:22</span> <span>订单号：2222112323222222</span>
+              </td>
+              <td>
+                总价：<strong>￥</strong>200.00
+              </td>
+            </tr>
+            <tr class="ui-other-tr">                                                         
+              <td width="249" class="ui-class-tit">现代舞教学</td>
+              <td width="243">
+                总价：￥<em>300.00</em><i>|</i><span>待支付</span>
+              </td>
+              <td width="140" class="ui-operate">
+                <a href="#">确认支付</a>
+                <a href="#">查看详情</a>
+                <a href="#">取消订单</a>
+              </td>
+            </tr>
+          </table>
+          <div class="ui-allic-balance fn-clear">
+            <div class="ui-allic-twotit">
+              <h3 class="ui-myvedio-tit">最近余额变动</h3>
+              <p >账号余额：<i class="ui-mf60">1000</i>元</p>
+            </div>
+            <table class="ui-allic-tab" width="100%">
+              <tr>
+                <th width="134">创建时间</th>
+                <th width="220">名称/备注</th>
+                <th width="218">金额(元)</th>
+                <th width="98">状态</th>
+              </tr>
+              <tr>                                                         
+                <td>2011-02-02 12:11:00</td>
+                <td>提现</td>
+                <td>2379.00</td>
+                <td>成功</td>
+              </tr>
+              <tr class="ui-tab-page">                                                         
+                <td colspan='4' align='right'>1-1条，共1条</td>
+              </tr>
+            </table>
+          </div>
+          <div class="ui-allic-balance fn-clear">
+            <h3 class="ui-myvedio-tit ui-tit-pos">新增学员</h3>
+            <table class="ui-allic-tab" width="100%">
+              <tr>
+                <th width="83">姓名</th>
+                <th width="145">所属加盟商</th>
+                <th width="116">年龄</th>
+                <th width="153">专业</th>
+                <th width="57">等级</th>
+                <th width="65">消费金额</th>
+              </tr>
+              <tr>                                                         
+                <td>dd</td>
+                <td>提现</td>
+                <td>2379.00</td>
+                <td>成功</td>
+                <td>成功</td>
+                <td>￥<i class="ui-mf60">1000</i></td>
+              </tr>
+              <tr class="ui-tab-page">                                                         
+                <td colspan='6' align='right'>3-1条，共3条</td>
+              </tr>
+            </table>
+          </div>
+          <div class="ui-allic-balance fn-clear">
+            <h3 class="ui-myvedio-tit ui-tit-pos">下级经销商业绩排名</h3>
+            <table class="ui-allic-tab" width="100%">
+              <tr>
+                <th width="38"></th>
+                <th width="238">加盟商</th>
+                <th width="259">学员人数</th>
+                <th width="125">学员消费金额</th>
+              </tr>
+              <tr>                                                         
+                <td><em class="ui-rank-num">1</em></td>
+                <td>提现</td>
+                <td>2379.00</td>
+                <td>￥<i class="ui-mf60">1000</i></td>
+              </tr>
+              <tr>                                                         
+                <td><em class="ui-rank-num ui-black">2</em></td>
+                <td>提现</td>
+                <td>2379.00</td>
+                <td>￥<i class="ui-mf60">1000</i></td>
+              </tr>
+              <!--<tr class="ui-tab-page">                          
+                <td colspan='4' align='right'>3-1条，共3条</td>
+              </tr>-->
+            </table>
+          </div>
+        </div>
+      </div>
+       
+    </div>
+  </div>
+  <!--主要内容 end-->
+  <!--尾部-->
+  <div class="footer-sec">
+    <div class="ui-grid-1000">
+      <div class="footer-logo fn-left"></div>
+      <div class="footer-rights fn-right">2014@ 麦德魔方版权所有 ALL COPYRIGHT  技术支持：华天科技
+          24小时服务热线：400-000-0000</div>
+    </div>
+  </div>
+</body>
+</html>

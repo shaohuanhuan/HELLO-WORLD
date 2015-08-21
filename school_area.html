@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>学校分布</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="css/base.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<script src="js/jquery.js"></script>
+<script src="js/raphael.js"></script>
+<script src="js/chinamapPath.js"></script>
+<script src="js/main.js"></script>
+<script src="js/map.js"></script>
+</head>
+<body>
+  <!--header-->
+  <div class="header ">
+  	<div class="ui-top" >
+    	<div class="ui-grid-1000 ">
+    		<div class="fn-left">欢迎您来到麦德魔方！</div>
+    		<div class="fn-right">
+    			<a class="hd-item" href="#">我的魔方</a>  
+    			<a class="hd-item" href="#">登录</a>  
+    			<a class="hd-item" href="#">注册</a>  
+    			<a class="hd-item" href="#">网站导航</a>  
+					<a class="hd-item" href="#">收藏的课程</a>
+    		</div>
+    	</div>
+    </div>
+  	<div class="header-bg">
+  		<div class="ui-grid-1000">
+  			<div class="ui-logo fn-left"></div>
+  			<div class="ui-search fn-right">
+  				<input type="text" class="ui-sinput" placeholder="搜课程/公开课/答疑..."/><a href="#" class="ui-slink"></a>
+  				<div class="ui-hot-search">
+    				<span>热门搜索：</span>  
+    				<a href="#">音乐</a>  
+    				<a href="#">乐器</a>  
+    				<a href="#">演奏</a>  
+    				<a href="#">托福</a>  
+    				<a href="#">瑜伽</a>
+  			  </div>
+  			</div>
+  			<div class="ui-nav fn-right">
+  				<ul>                                
+  					<li class="ui-nav-item ui-nav-fir">
+  						<a href="#">首页</a>
+  					</li>
+  					<li class="ui-nav-item">
+  						<a href="#">视频汇</a>
+  					</li>
+  					<li class="ui-nav-item">
+  						<a href="#">在线购物</a>
+  					</li>
+  					<li class="ui-nav-item">
+  						<a href="#">专家在线</a>
+  					</li>
+  					<li class="ui-nav-item">
+  						<a href="#">综合教育</a>
+  					</li>
+  					<li class="ui-nav-item">
+  						<a href="#">学员社区</a>
+  					</li>
+  					<li class="ui-nav-item">
+  						<a href="#">招商加盟</a>
+  					</li>
+  					<li class="ui-nav-item">
+  						<a href="#">机构平台</a>
+  					</li>
+  					<li class="ui-nav-item">
+  						<a href="#">学校分布</a>
+  					</li>
+  				</ul>
+  			</div>
+
+  		</div>
+  	</div>
+  </div>
+  <!--主要内容 start-->
+  <div class="content vedio-content">
+    <div class="ui-grid-1000">
+      <div class="ui-cont-top">
+          <img src="images/top1.png">
+      </div>
+      <div class="ui-curr-pos">当前位置：<a href="#">首页</a>><a href="#">学校分布</a></div>
+      <div class="ui-china-map ui-bor fn-clear">
+        <h2 class="ui-map-tit">学校分布</h2>
+        <div id="map"  class="fn-left"></div>
+        <!--<div id="ChinaMap" class="fn-left"></div>-->
+        <div class="ui-province fn-left">
+          <span class="ui-curr-btn">当前省份：<span id="curr-province">江苏</span></span>
+          <div class="ui-pos-wrap" id="curr-city-list">
+            <p>
+              <em class="ui-pos-icon"></em><a href="javascript:;" onclick="getSchool(this);" class="city-item">南京</a>
+              <em class="ui-pos-icon"></em><a href="javascript:;" onclick="getSchool(this);" class="city-item">无锡</a>
+            </p>
+            <p>
+              <em class="ui-pos-icon"></em><a href="javascript:;" onclick="getSchool(this);" class="city-item">南京</a>
+              <em class="ui-pos-icon"></em><a href="javascript:;" onclick="getSchool(this);" class="city-item">无锡</a>
+            </p>
+            <p>
+              <em class="ui-pos-icon"></em><a href="javascript:;" onclick="getSchool(this);" class="city-item">南京</a>
+              <em class="ui-pos-icon"></em><a href="javascript:;" onclick="getSchool(this);" class="city-item">无锡</a>
+            </p>
+          </div>
+          <span class="ui-curr-btn">当前城市：<span id="curr-city">南京</span></span>
+          <ul class="ui-school-list">
+            <li class="ui-school-item"><a href="javascript:;" onclick="showSchInfo(this);">北大青鸟上海分部</a></li>
+            <li class="ui-school-item"><a href="javascript:;" onclick="showSchInfo(this);">北大青鸟上海分部</a></li>
+            <li class="ui-school-item"><a href="javascript:;" onclick="showSchInfo(this);">北大青鸟上海分部</a></li>
+            <li class="ui-school-item"><a href="javascript:;" onclick="showSchInfo(this);">北大青鸟上海分部</a></li>
+            <li class="ui-school-item"><a href="javascript:;" onclick="showSchInfo(this);">北大青鸟上海分部</a></li>
+            <li class="ui-school-item"><a href="javascript:;" onclick="showSchInfo(this);">北大青鸟上海分部</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!--主要内容 end-->
+  <!--尾部-->
+  <div class="footer-sec">
+    <div class="ui-grid-1000">
+      <div class="footer-logo fn-left"></div>
+      <div class="footer-rights fn-right">2014@ 麦德魔方版权所有 ALL COPYRIGHT  技术支持：华天科技
+          24小时服务热线：400-000-0000</div>
+    </div>
+  </div>
+
+  <!--弹框-->
+  <div id="dlg-school" class="ui-dialog">
+    <a href="javascript:;" class="ui-dialog-close"></a>
+    <div class="ui-school-pic fn-left">
+      <img src="images/school01.jpg"/>
+    </div>
+    <div class="ui-school-desc fn-left">
+      <h2 class="ui-map-tit ui-school-tit">长沙北大青鸟华瑞校区</h2>
+      <table class="ui-school-detail">
+        <tr>
+          <td>地    址：</td>
+          <td>长沙市五一西路209号嘉顿新天地商务楼7楼</td>
+        </tr>
+        <tr>
+          <td>联 系 人：</td>
+          <td>王老师  钱老师</td>
+        </tr>
+        <tr>
+          <td>联系电话：</td>
+          <td>0731-85133320 / 0731-85133220 </td>
+        </tr>
+        <tr>
+          <td>微    信：</td>
+          <td>北大青鸟长沙</td>
+        </tr>
+        <tr>
+          <td>联 系 qq：</td>
+          <td>65412541253</td>
+        </tr>
+        <tr>
+          <td>邮    箱：</td>
+          <td>xighl@163.com</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="ui-mask"></div>
+</body>
+</html>

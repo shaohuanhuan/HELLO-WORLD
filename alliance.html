@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>加盟商首页</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="css/base.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+<!--引用百度地图API-->
+<style type="text/css">
+.iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+.iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+</style>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true">
+</script>
+</head>
+<body style="overflow-x:hidden;">
+  <!--header-->
+  <div class="alli-header">
+  	<div class="ui-grid-1000 fn-clear">
+      <div class="ui-logo2 fn-left">
+        <img src="images/logo.png"/>
+        <h1>加盟商专区</h1>
+      </div>
+      <div class="ui-tele fn-right">
+        <p class="ui-tele-pic"></p>
+        <p class="ui-pnum">24小时服务电话
+        <span class="">400-000-3654</span>
+        </p>
+      </div>
+  	</div>
+  </div>
+  <!--登录 start-->
+  <div class="ui-alogin">
+    <div class="ui-grid-1000 fn-clear">
+      <form id="" action="" method="post">
+        <div class="ui-alogin-form fn-right">
+          <h2 class="ui-login-tit">
+            已入驻加盟商登录
+          </h2>
+          <input type="text" class="ui-ainput" placeholder="请输入手机号/账号"/>
+          <input type="password" class="ui-ainput" placeholder="请输入密码"/>
+          <div class="ui-remb">
+            <input type="checkbox" />
+            <span>记住我</span>
+            <a class="fn-right" href="#">忘记密码</a>
+          </div>
+          <input type="button" class="ui-ablue-btn" value="登录"/>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!--登录 end-->
+  <!--主要内容 start-->
+  <div class="content alli-content">
+    <div class="alli-advantage fn-clear">
+      <div class="ui-grid-1000">
+        <h2 class="ui-alli-tit">加盟优势</h2>
+        <ul>
+          <li class="ui-advantage-item">
+            <div class="ui-alli-icon"></div>
+            <h4>模式新颖</h4>
+            <p>注册加盟商，如已拥有加盟商账号，请直接登录</p>
+          </li>
+           <li class="ui-advantage-item">
+            <div class="ui-alli-icon ui-alli-icon2"></div>
+            <h4>教娱结合</h4>
+            <p>注册加盟商，如已拥有加盟商账号，请直接登录</p>
+          </li>
+           <li class="ui-advantage-item">
+            <div class="ui-alli-icon ui-alli-icon3"></div>
+            <h4>全新功能</h4>
+            <p>注册加盟商，如已拥有加盟商账号，请直接登录</p>
+          </li>
+           <li class="ui-advantage-item">
+            <div class="ui-alli-icon ui-alli-icon4"></div>
+            <h4>全新功能</h4>
+            <p>注册加盟商，如已拥有加盟商账号，请直接登录</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--first end-->
+    <div class="alli-guide fn-clear">
+      <div class="ui-grid-1000">
+        <h2 class="ui-alli-tit">加盟指南</h2>
+        <ul id="ui-guide-tita">
+          <li class="ui-guide-tit ui-guide-tit-curr">
+            <a href="javascript:;" class="">加盟方向</a>
+          </li>
+          <li class="ui-guide-tit">
+            <a href="javascript:;" class="">加盟标准</a>
+          </li>
+          <li class="ui-guide-tit">
+            <a href="javascript:;" class="">资质要求</a>
+          </li>
+          <li class="ui-guide-tit ui-guide-tit-last">
+            <a href="javascript:;" class="">资费标准</a>
+          </li>
+        </ul>
+        <div class="ui-guide-content">
+          <h4>如何加盟加入虎林重技术商城？</h4>
+          <p>开店只需四个步骤：</p>
+          <p>1、注册会员账户、点击注册</p>
+          <p>2、立即申请加盟、填写相关资料资质证明、点击申请加盟填写资质</p>
+          <p>3、填写资质和上传资料后，等待审核</p>
+          <p>4、审核通过后，（免费店铺）直接点击开店即可，其他店铺进行缴费后，上传缴费单后，等待审核，审核通过后即可开店。
+          店铺申请下来后如何下一步？？？</p>
+          <p>1、店铺成功开店后，商城首页顶部有商家管理中心，点击输入账户和密码即可登录到商家后台。</p>
+          <p>2、进入后台头部导航有商品两个字，那么可以点击然后看到商品发布，点击进去后按照商品属性格式填写即可。</p>
+          <p>3、为了产品拍照美观，吸引更多的买家，建议商家可以和本地照相馆合作、让照相馆完成拍摄工作。</p>
+          <p>如果在申请店铺和运营店铺过程中遇到难题请随时与我们联系！</p>
+        </div>
+        <div class="ui-guide-content fn-hide">
+          <h4>如何加盟加入虎林重技术商城2？</h4>
+          <p>开店只需四个步骤：</p>
+          <p>1、注册会员账户、点击注册</p>
+          <p>2、立即申请加盟、填写相关资料资质证明、点击申请加盟填写资质</p>
+          <p>3、填写资质和上传资料后，等待审核</p>
+          <p>4、审核通过后，（免费店铺）直接点击开店即可，其他店铺进行缴费后，上传缴费单后，等待审核，审核通过后即可开店。
+          店铺申请下来后如何下一步？？？</p>
+          <p>1、店铺成功开店后，商城首页顶部有商家管理中心，点击输入账户和密码即可登录到商家后台。</p>
+          <p>2、进入后台头部导航有商品两个字，那么可以点击然后看到商品发布，点击进去后按照商品属性格式填写即可。</p>
+          <p>3、为了产品拍照美观，吸引更多的买家，建议商家可以和本地照相馆合作、让照相馆完成拍摄工作。</p>
+          <p>如果在申请店铺和运营店铺过程中遇到难题请随时与我们联系！</p>
+        </div>
+        <div class="ui-guide-content fn-hide">
+          <h4>如何加盟加入虎林重技术商城3？</h4>
+          <p>开店只需四个步骤：</p>
+          <p>1、注册会员账户、点击注册</p>
+          <p>2、立即申请加盟、填写相关资料资质证明、点击申请加盟填写资质</p>
+          <p>3、填写资质和上传资料后，等待审核</p>
+          <p>4、审核通过后，（免费店铺）直接点击开店即可，其他店铺进行缴费后，上传缴费单后，等待审核，审核通过后即可开店。
+          店铺申请下来后如何下一步？？？</p>
+          <p>1、店铺成功开店后，商城首页顶部有商家管理中心，点击输入账户和密码即可登录到商家后台。</p>
+          <p>2、进入后台头部导航有商品两个字，那么可以点击然后看到商品发布，点击进去后按照商品属性格式填写即可。</p>
+          <p>3、为了产品拍照美观，吸引更多的买家，建议商家可以和本地照相馆合作、让照相馆完成拍摄工作。</p>
+          <p>如果在申请店铺和运营店铺过程中遇到难题请随时与我们联系！</p>
+        </div>
+        <div class="ui-guide-content fn-hide">
+          <h4>如何加盟加入虎林重技术商城4？</h4>
+          <p>开店只需四个步骤：</p>
+          <p>1、注册会员账户、点击注册</p>
+          <p>2、立即申请加盟、填写相关资料资质证明、点击申请加盟填写资质</p>
+          <p>3、填写资质和上传资料后，等待审核</p>
+          <p>4、审核通过后，（免费店铺）直接点击开店即可，其他店铺进行缴费后，上传缴费单后，等待审核，审核通过后即可开店。
+          店铺申请下来后如何下一步？？？</p>
+          <p>1、店铺成功开店后，商城首页顶部有商家管理中心，点击输入账户和密码即可登录到商家后台。</p>
+          <p>2、进入后台头部导航有商品两个字，那么可以点击然后看到商品发布，点击进去后按照商品属性格式填写即可。</p>
+          <p>3、为了产品拍照美观，吸引更多的买家，建议商家可以和本地照相馆合作、让照相馆完成拍摄工作。</p>
+          <p>如果在申请店铺和运营店铺过程中遇到难题请随时与我们联系！</p>
+        </div>
+      </div>
+    </div>
+    <!--second end-->
+    <div class="alli-map fn-clear">
+      <div class="ui-grid-1000">
+        <h2 class="ui-alli-tit">加盟地图</h2>
+        <div style="width:1000px;height:705px;" id="dituContent"></div>
+      </div>
+    </div>
+    <!--third end-->
+    <div class="alli-apply fn-clear">
+      <div class="ui-grid-1000">
+        <h2 class="ui-alli-tit">加盟申请</h2>
+        <table  border="0" cellspacing="0" cellpadding="0" class="ui-reg">
+          <tr>
+            <th><span class="impmark">*</span>登录账号</th>
+            <td><input type="text" id="lgacc" placeholder="限制6~18位账号，只可为字母或数字"></td>
+          </tr>
+          <tr>
+            <th><span class="impmark">*</span>登录密码</th>
+            <td><input type="password" id="lgcode" 
+              placeholder="限制6~18位账号，不可输入特殊字符"></td>
+          </tr>
+          <tr>
+            <th><span class="impmark">*</span>确认密码</th>
+            <td><input type="password" id="lgcode2" placeholder="请再次输入的密码与新密码一致"></td>
+          </tr>
+          <tr>
+            <th><span class="impmark">*</span>验证码</th>
+            <td><input class="ui-input-w216" type="text" id="lgyzm" placeholder="请输入验证码"><span><img src="images/yanz.png" class="ui-code"></span></td>
+          </tr>
+          <tr>
+            <th>公司名称</th>
+            <td><input type="text" placeholder="请输入用户姓名"></td>
+          </tr>
+          <tr>
+            <th>联系电话</th>
+            <td><input type="text" placeholder="请输入正确格式的联系电话"></td>
+          </tr>
+          <tr>
+            <th><span class="impmark">*</span>详细地址</th>
+            <td class="ui-select-box">
+              <select class="ui-sel-w144">
+                  <option>省份/直辖市</option>
+                </select><select class="ui-sel-w107">
+                  <option>市/县</option>
+                </select><select class="ui-sel-w107">
+                  <option>镇/区</option>
+                </select>
+                
+            </td>
+          </tr>
+          <tr>
+            <th>所在行业</th>
+            <td>
+              <select class="ui-long-sel" placeholder="--选择行业--">
+                <option>2</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th>申请说明</th>
+            <td>
+              <textarea class="ui-txta" placeholder="申请说明"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <th></th>
+            <td><input type="checkbox" class="ui-checkbox"><span>我同意<a href="#" class=" font-12 color-yel">《麦德魔方用户条款》</a></span></td>
+          </tr>
+          <tr>
+            <th></th>
+            <td class="bttd"><input class="ui-org-btn" type="submit" value="立即申请"/></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!--forth end-->
+  </div>
+  <!--主要内容 end-->
+  <!--尾部-->
+  <div class="footer-sec">
+    <div class="ui-grid-1000">
+      <div class="footer-logo fn-left"></div>
+      <div class="footer-rights fn-right">2014@ 麦德魔方版权所有 ALL COPYRIGHT  技术支持：华天科技
+          24小时服务热线：400-000-0000</div>
+    </div>
+  </div>
+  
+<script>
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+    
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(116.679366,39.684327);//定义一个中心点坐标
+        map.centerAndZoom(point,9);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+    
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+    
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+  var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+  map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+  var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+  map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+  var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+  map.addControl(ctrl_sca);
+    }
+    
+    //标注点数组
+    var markerArr = 
+    [{title:"北大青鸟",content:"我的备注",point:"115.908979|39.638112",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}},
+    {title:"北大青鸟杭州分校",content:"我的备注",point:"120.196378|30.361009",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+     ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+      var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+      var iw = createInfoWindow(i);
+      var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+      marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                borderColor:"#808080",
+                color:"#333",
+                cursor:"pointer"
+            });
+      
+      (function(){
+        var index = i;
+        var _iw = createInfoWindow(i);
+        var _marker = marker;
+        _marker.addEventListener("click",function(){
+            this.openInfoWindow(_iw);
+          });
+          _iw.addEventListener("open",function(){
+            _marker.getLabel().hide();
+          })
+          _iw.addEventListener("close",function(){
+            _marker.getLabel().show();
+          })
+        label.addEventListener("click",function(){
+            _marker.openInfoWindow(_iw);
+          })
+        if(!!json.isOpen){
+          label.hide();
+          _marker.openInfoWindow(_iw);
+        }
+      })()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+    
+    initMap();//创建和初始化地图
+</script>
+</body>
+</body>
+</html>

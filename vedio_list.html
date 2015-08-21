@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>视频列表</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="css/base.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+</head>
+<body>
+  <!--header-->
+  <div class="header ">
+  	<div class="ui-top" >
+    	<div class="ui-grid-1000 ">
+    		<div class="fn-left">欢迎您来到麦德魔方！</div>
+    		<div class="fn-right">
+    			<a class="hd-item" href="#">我的魔方</a>  
+    			<a class="hd-item" href="#">登录</a>  
+    			<a class="hd-item" href="#">注册</a>  
+    			<a class="hd-item" href="#">网站导航</a>  
+					<a class="hd-item" href="#">收藏的课程</a>
+    		</div>
+    	</div>
+    </div>
+  	<div class="header-bg">
+  		<div class="ui-grid-1000">
+  			<div class="ui-logo fn-left"></div>
+  			<div class="ui-search fn-right">
+  				<input type="text" class="ui-sinput" placeholder="搜课程/公开课/答疑..."/><a href="#" class="ui-slink"></a>
+  				<div class="ui-hot-search">
+    				<span>热门搜索：</span>  
+    				<a href="#">音乐</a>  
+    				<a href="#">乐器</a>  
+    				<a href="#">演奏</a>  
+    				<a href="#">托福</a>  
+    				<a href="#">瑜伽</a>
+  			  </div>
+  			</div>
+  			<div class="ui-nav fn-right">
+  				<ul>                                
+  					<li class="ui-nav-item ui-nav-fir">
+  						<a href="#">首页</a>
+  					</li>
+  					<li class="ui-nav-item">
+  						<a href="#">视频汇</a>
+  					</li>
+  					<li class="ui-nav-item">
+  						<a href="#">在线购物</a>
+  					</li>
+  					<li class="ui-nav-item">
+  						<a href="#">专家在线</a>
+  					</li>
+  					<li class="ui-nav-item">
+  						<a href="#">综合教育</a>
+  					</li>
+  					<li class="ui-nav-item">
+  						<a href="#">学员社区</a>
+  					</li>
+  					<li class="ui-nav-item">
+  						<a href="#">招商加盟</a>
+  					</li>
+  					<li class="ui-nav-item">
+  						<a href="#">机构平台</a>
+  					</li>
+  					<li class="ui-nav-item">
+  						<a href="#">学校分布</a>
+  					</li>
+  				</ul>
+  			</div>
+
+  		</div>
+  	</div>
+  </div>
+  <!--主要内容 start-->
+  <div class="content vedio-content">
+    <div class="ui-grid-1000">
+      <div class="ui-cont-top">
+          <img src="images/top1.png">
+      </div>
+      <div class="ui-curr-pos">当前位置：<a href="#">首页</a>><a href="#">视频汇</a></div>
+      <div class="ui-search-wrap ui-bor">
+        <form id="searchForm" method="post" action="">
+          <ul>
+            <li class="ui-search-item">
+              <label>频道：</label>
+              <a href="#" data-value="all" class="ui-search-link-curr">全部</a>
+              <a href="#" data-value="1">艺术</a>
+              <a href="#" data-value="1">外语</a>
+              <a href="#" data-value="1">考研出国</a>
+              <a href="#" data-value="1">小升初</a>
+              <a href="#" data-value="1">中考</a>
+              <a href="#" data-value="1">高考</a>
+              <a href="#" data-value="1">考研</a>
+              <a href="#" data-value="1">职场兴趣</a>
+              <a href="#" data-value="1">考研出国</a>
+              <a href="#" data-value="1">鉴赏</a>                                   
+            </li>
+            <li class="ui-search-item ">
+              <label>资费：</label>
+              <a href="#" data-value="all" class="ui-search-link-curr">全部</a>
+              <a href="#" data-value="1">免费</a>
+              <a href="#" data-value="1">1000元以下</a>
+              <a href="#" data-value="1">1000-5000元</a>
+              <a href="#" data-value="1">5000-10000元</a>
+              <a href="#" data-value="1">10000元以上</a>                                  
+            </li>
+            <li class="ui-search-item ">
+              <label>地区：</label>
+              <a href="#" data-value="all" class="ui-search-link-curr">全部</a>
+              <a href="#" data-value="1">北京</a>
+              <a href="#" data-value="1">上海</a>
+              <a href="#" data-value="1">广州</a>
+              <a href="#" data-value="1">深圳</a>
+              <a href="#" data-value="1">河北</a>  
+              <a href="#" data-value="1">哈尔滨</a>
+              <a href="#" data-value="1">江苏</a>
+              <a href="#" data-value="1">浙江</a>                                
+            </li> 
+            <li class="ui-search-item ">
+              <label>机构：</label>
+              <a href="#" data-value="all" class="ui-search-link-curr">全部</a>
+              <a href="#" data-value="1">北大青鸟</a>
+              <a href="#" data-value="1">新东方</a>
+              <a href="#" data-value="1">CSDN</a>                                 
+            </li> 
+            <li class="ui-search-item ">
+              <label>老师：</label>
+              <a href="#" data-value="all" class="ui-search-link-curr">全部</a>
+              <a href="#" data-value="1">热门老师</a>
+              <a href="#" data-value="1">国际权威</a>
+              <a href="#" data-value="1">专业辅导</a>
+              <a href="#" data-value="1">学生热评</a>                                  
+            </li>
+            <li class="ui-search-item ui-search-condit">
+              <label>已选条件：</label>
+              <span class="ui-xwrap">
+                <em>艺术</em><a href="javascript:;" class="ui-x">x</a>
+              </span>
+            </li>                        
+          </ul>
+        </form>
+      </div>
+      <!--vedio-->
+       <div class="ui-public-classw ui-vedio ui-bor fn-clear">
+          <ul class="ui-public-class">
+            <li class="ui-public-class-item">
+              <a href="#" class="ui-vedio-link">
+                <img src="./images/big_vedio01.jpg"/>
+                <em class="ui-vedio-time">05:33</em>
+              </a>
+              <div class="ui-vedio-tit">
+                <a href="#">街舞初步学习简单一点</a>
+                <p class="ui-time">2013-09-02</p>
+              </div>
+            </li>
+            <li class="ui-public-class-item">
+              <a href="#" class="ui-vedio-link">
+                <img src="./images/big_vedio01.jpg"/>
+                <em class="ui-vedio-time">05:33</em>
+              </a>
+              <div class="ui-vedio-tit">
+                <a href="#">街舞初步学习简单一点</a>
+                <p class="ui-time">2013-09-02</p>
+              </div>
+            </li>
+            <li class="ui-public-class-item">
+              <a href="#" class="ui-vedio-link">
+                <img src="./images/big_vedio01.jpg"/>
+                <em class="ui-vedio-time">05:33</em>
+              </a>
+              <div class="ui-vedio-tit">
+                <a href="#">街舞初步学习简单一点</a>
+                <p class="ui-time">2013-09-02</p>
+              </div>
+            </li>
+            <li class="ui-public-class-item">
+              <a href="#" class="ui-vedio-link">
+                <img src="./images/big_vedio01.jpg"/>
+                <em class="ui-vedio-time">05:33</em>
+              </a>
+              <div class="ui-vedio-tit">
+                <a href="#">街舞初步学习简单一点</a>
+                <p class="ui-time">2013-09-02</p>
+              </div>
+            </li>
+            <li class="ui-public-class-item">
+              <a href="#" class="ui-vedio-link">
+                <img src="./images/big_vedio01.jpg"/>
+                <em class="ui-vedio-time">05:33</em>
+              </a>
+              <div class="ui-vedio-tit">
+                <a href="#">街舞初步学习简单一点</a>
+                <p class="ui-time">2013-09-02</p>
+              </div>
+            </li>
+            <li class="ui-public-class-item">
+              <a href="#" class="ui-vedio-link">
+                <img src="./images/big_vedio01.jpg"/>
+                <em class="ui-vedio-time">05:33</em>
+              </a>
+              <div class="ui-vedio-tit">
+                <a href="#">街舞初步学习简单一点</a>
+                <p class="ui-time">2013-09-02</p>
+              </div>
+            </li>
+            <li class="ui-public-class-item">
+              <a href="#" class="ui-vedio-link">
+                <img src="./images/big_vedio01.jpg"/>
+                <em class="ui-vedio-time">05:33</em>
+              </a>
+              <div class="ui-vedio-tit">
+                <a href="#">街舞初步学习简单一点</a>
+                <p class="ui-time">2013-09-02</p>
+              </div>
+            </li>
+            <li class="ui-public-class-item">
+              <a href="#" class="ui-vedio-link">
+                <img src="./images/big_vedio01.jpg"/>
+                <em class="ui-vedio-time">05:33</em>
+              </a>
+              <div class="ui-vedio-tit">
+                <a href="#">街舞初步学习简单一点</a>
+                <p class="ui-time">2013-09-02</p>
+              </div>
+            </li>
+            <li class="ui-public-class-item">
+              <a href="#" class="ui-vedio-link">
+                <img src="./images/big_vedio01.jpg"/>
+                <em class="ui-vedio-time">05:33</em>
+              </a>
+              <div class="ui-vedio-tit">
+                <a href="#">街舞初步学习简单一点</a>
+                <p class="ui-time">2013-09-02</p>
+              </div>
+            </li>
+            <li class="ui-public-class-item">
+              <a href="#" class="ui-vedio-link">
+                <img src="./images/big_vedio01.jpg"/>
+                <em class="ui-vedio-time">05:33</em>
+              </a>
+              <div class="ui-vedio-tit">
+                <a href="#">街舞初步学习简单一点</a>
+                <p class="ui-time">2013-09-02</p>
+              </div>
+            </li>
+            <li class="ui-public-class-item">
+              <a href="#" class="ui-vedio-link">
+                <img src="./images/big_vedio01.jpg"/>
+                <em class="ui-vedio-time">05:33</em>
+              </a>
+              <div class="ui-vedio-tit">
+                <a href="#">街舞初步学习简单一点</a>
+                <p class="ui-time">2013-09-02</p>
+              </div>
+            </li>
+            <li class="ui-public-class-item">
+              <a href="#" class="ui-vedio-link">
+                <img src="./images/big_vedio01.jpg"/>
+                <em class="ui-vedio-time">05:33</em>
+              </a>
+              <div class="ui-vedio-tit">
+                <a href="#">街舞初步学习简单一点</a>
+                <p class="ui-time">2013-09-02</p>
+              </div>
+            </li>
+          </ul>
+          <div class="ui-page">
+            <a href="#">上一页</a>
+            <a href="#" class="ui-page-curr">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <a href="#">下一页</a>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!--主要内容 end-->
+  <!--尾部-->
+  <div class="footer-sec">
+    <div class="ui-grid-1000">
+      <div class="footer-logo fn-left"></div>
+      <div class="footer-rights fn-right">2014@ 麦德魔方版权所有 ALL COPYRIGHT  技术支持：华天科技
+          24小时服务热线：400-000-0000</div>
+    </div>
+  </div>
+</body>
+</html>

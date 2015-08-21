@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>加盟商中心-钱包管理</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="css/base.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/alli.css" rel="stylesheet">
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+</head>
+<body>
+ <!--header-->
+  <div class="header ">
+    <div class="ui-top" >
+      <div class="ui-grid-1000 ">
+        <div class="fn-left">欢迎您来到麦德魔方！</div>
+        <div class="fn-right">
+          <a class="hd-item" href="#">我的魔方</a>  
+          <a class="hd-item" href="#">登录</a>  
+          <a class="hd-item" href="#">注册</a>  
+          <a class="hd-item" href="#">网站导航</a>  
+          <a class="hd-item" href="#">收藏的课程</a>
+        </div>
+      </div>
+    </div>
+    <div class="header-bg head-bg2">
+      <div class="ui-grid-1000">
+        <div class="ui-logo fn-left">加盟商中心</div>
+        <div class="header-info alli-header-info fn-right">
+          <span class="ui-name">bduedwe</span>
+          <a href="#" class="">消息中心</a>
+          <a href="#" class="">注销</a>
+        </div>
+      
+
+      </div>
+    </div>
+  </div>
+  <!--主要内容 start-->
+  <div class="content myclass-content">
+    <div class="ui-grid-1000">
+      <div class="ui-curr-pos">当前位置：<a href="#">首页</a><em>></em><a href="#">加盟商中心</a></div>
+      <div class="ui-main ui-bor fn-clear">
+        <div class="ui-leftmenu fn-left">
+          <ul>
+            <li class="ui-leftmenu-item">
+              <a href="myorder.html">
+                <em class="ui-arr"></em>
+                <span>我的订单</span>
+              </a>
+            </li>
+            <li class="ui-leftmenu-item ui-leftmenu-item-curr">
+              <a href="javascript:;" onclick="openSub(this);">
+                <em class="ui-arr"></em>
+                <span>钱包管理</span>
+              </a>
+             <ul class="ui-leftmenu-sublist">
+                <li class="ui-leftmenu-subitem ui-subitem-curr">
+                  <a href="alli_bk.html">银行卡绑定</a></li>
+                <li class="ui-leftmenu-subitem">
+                  <a href="alli_online.html">在线支付</a></li>
+                <li class="ui-leftmenu-subitem">
+                  <a href="alli_balance.html">我的余额</a></li>
+                <li class="ui-leftmenu-subitem">
+                  <a href="alli_wd.html">提现</a></li>
+                <li class="ui-leftmenu-subitem">
+                  <a href="alli_payrec.html">支付记录</a></li>
+                <li class="ui-leftmenu-subitem ui-sublast">
+                  <a href="alli_wdrec.html">提现记录</a></li>
+              </ul>
+            </li>
+            <li class="ui-leftmenu-item">
+              <a href="javascript:;" onclick="openSub(this);">
+                <em class="ui-arr"></em>
+                <span>加盟商下属管理</span>
+              </a>
+              <ul class="ui-leftmenu-sublist">
+                <li class="ui-leftmenu-subitem">
+                  <a href="subord_stusum.html">下属学员数据统计</a></li>
+                <li class="ui-leftmenu-subitem">
+                  <a href="subord_merinfo.html">下级加盟商资料</a></li>
+                <li class="ui-leftmenu-subitem ui-sublast">
+                  <a href="subord_mersum.html">下级加盟商数据统计</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="ui-rightcontent fn-left fn-clear ui-relative">
+          <div class="ui-leftmenu-bor"></div>
+          <form id="" action="" method="post">
+            <h3 class="ui-myvedio-tit">银行卡绑定</h3>
+            <div class="ui-purse-methods">
+              <label class="ui-methods-tit">
+                <input type="radio"/>
+                <span>方式一：通过选择银行发卡行关联</span>
+              </label>
+              <ul class="ui-bank-list fn-clear">
+                <li class="ui-bank-chkd">
+                  <input type="radio" id="bank1" name="bank" checked/>
+                  <label class="ui-bank-icon" for="bank1">
+                    <img src="images/bank/bk_gs.png"/ title="工商银行">
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" id="bank2" name="bank"/>
+                  <label class="ui-bank-icon" for="bank2">
+                    <img src="images/bank/bk_nb.png"/ title="宁波银行">
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" id="bank3" name="bank"/>
+                  <label class="ui-bank-icon" for="bank3">
+                    <img src="images/bank/bk_gs.png"/ title="工商银行">
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" id="bank4" name="bank"/>
+                  <label class="ui-bank-icon" for="bank4">
+                    <img src="images/bank/bk_nb.png"/ title="宁波银行">
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" id="bank5" name="bank"/>
+                  <label class="ui-bank-icon" for="bank5">
+                    <img src="images/bank/bk_gs.png"/ title="工商银行">
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" id="bank6" name="bank"/>
+                  <label class="ui-bank-icon" for="bank6">
+                    <img src="images/bank/bk_gs.png"/ title="工商银行">
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" id="bank7" name="bank"/>
+                  <label class="ui-bank-icon" for="bank7">
+                    <img src="images/bank/bk_gs.png"/ title="工商银行">
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" id="bank8" name="bank"/>
+                  <label class="ui-bank-icon" for="bank8">
+                    <img src="images/bank/bk_gs.png"/ title="工商银行">
+                  </label>
+                </li>
+              </ul>
+              <div class="choseOther">
+                <select class="ui-sel-nobor">
+                  <option>选其他银行</option>
+                </select>
+                <em class="ui-red">*</em>
+                <span>我的银行卡是：</span>
+                <input type="radio" name="cardtype" id="cardtype1"/>
+                <label for="cardtype1">信用卡(贷记卡)</label>
+                <input type="radio" name="cardtype" id="cardtype2" class="rad-pos"/>
+                <label for="cardtype2">储蓄卡(借记卡)</label>
+                <a href="#">如何判断?</a>
+              </div>
+            </div>
+            <div class="ui-purse-methods ui-dowbor">
+              <label class="ui-methods-tit">
+                <input type="radio"/>
+                <span>方式一：输入银行卡号关联</span>
+              </label>
+            </div>
+            <a class="ui-btn ui-next-btn" href="#">下一步</a>
+          </form>
+        </div>
+      </div>
+       
+    </div>
+  </div>
+  <!--主要内容 end-->
+  <!--尾部-->
+  <div class="footer-sec">
+    <div class="ui-grid-1000">
+      <div class="footer-logo fn-left"></div>
+      <div class="footer-rights fn-right">2014@ 麦德魔方版权所有 ALL COPYRIGHT  技术支持：华天科技
+          24小时服务热线：400-000-0000</div>
+    </div>
+  </div>
+</body>
+</html>
